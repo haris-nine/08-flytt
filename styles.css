@@ -118,6 +118,7 @@ button:hover {
     gap: 8.3333vw;
     justify-content: center;
     align-items: center;
+    height: calc(100vh - 5.7292vw);
 }
 
 .text {
