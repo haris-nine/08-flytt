@@ -398,14 +398,41 @@ textarea {
     width: 340px;
     height: 410px;
     box-sizing: border-box;
-    padding: 35px 25px;
+    padding: 40px 25px;
+    box-shadow: 16px 20px 45px 0px rgba(2, 2, 2, 0.05);
 }
 
-.box div:nth-of-type(1) {
+.box * {
     font-family: "Lato", sans-serif;
+}
+
+.box > div:nth-of-type(1) {
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
     color: rgba(95, 98, 100, 1);
 }
 
+.username {
+    display: flex;
+    gap: 36px;
+    padding-bottom: 5px;
+}
+
+.username > * {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.4px;
+    color: rgba(95, 98, 100, 1);
+}
+
+.username > div:nth-child(2) {
+    font-weight: 400;
+}
+
+.verification {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 18px;
+}
