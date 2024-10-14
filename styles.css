@@ -129,7 +129,7 @@ button:hover {
     url('images/bg.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 42.3438vw;
+    height: 44vw;
     color: rgba(255, 255, 255, 1);
     display: flex;
     gap: 8.3333vw;
