@@ -726,10 +726,6 @@ li > a:hover {
     text-decoration: underline;
 }
 
-li:nth-child(3) {
-    grid-row: 4/5;
-}
-
 #links {
     display: grid;
     align-content: space-between;
