@@ -4,12 +4,22 @@
 
 * {
     font-family: "Poppins", sans-serif;
+    font-size: 0.8333vw;
 }
 
 html,body {
     padding: 0;
     margin: 0;
 }
+
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
 
 /* Hide scrollbar*/
 html::-webkit-scrollbar,body::-webkit-scrollbar {
@@ -32,6 +42,9 @@ header {
     border-bottom: 0.0521vw solid #C6C6C6;
 }
 
+#logo {
+    width: 8.3333vw;
+}
 
 .tabs {
     margin-left: auto;
@@ -81,6 +94,10 @@ header {
     text-align: left;
 }
 
+#phone-cta img, button > img {
+    width: 1.0417vw;
+}
+
 #phone-cta > span:hover {
     text-decoration: underline;
 }
@@ -94,7 +111,7 @@ button {
     font-size: 0.9375vw;
     font-weight: 400;
     line-height: 1.4063vw;
-    width: 12.5vw;
+    width: max-content;
 }
 
 button:hover {
@@ -118,7 +135,6 @@ button:hover {
     gap: 8.3333vw;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 5.7292vw);
 }
 
 .text {
@@ -227,6 +243,10 @@ textarea {
     align-items: stretch;
     padding: 7.8125vw 13.0208vw;
     gap: 3.125vw;
+}
+
+#p-area img {
+    max-width: 28.125vw;
 }
 
 #para {
@@ -369,6 +389,10 @@ textarea {
     align-items: center;
 }
 
+#endorsement img {
+    max-width: 8.0729vw;
+}
+
 #endorsement div {
     font-size: 1.7708vw;
     font-weight: 600;
@@ -437,3 +461,283 @@ textarea {
     align-items: center;
     font-size: 0.9375vw;
 }
+
+.verification img {
+    max-width: 1.8229vw;
+}
+
+/* reviews end */
+
+/* offer starts */
+
+
+#offer {
+    margin: 7.8125vw 13.0208vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2.0833vw;
+}
+
+#banner {
+    background-color: #EA651B;
+    padding: 2.6042vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#banner > div:first-child {
+    padding-left: 1.8229vw;
+    font-size: 4.7396vw;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 6.1615vw;
+    flex: 1;
+}
+
+#banner > div:last-child {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1458vw;
+    font-weight: 400;
+    line-height: 1.4896vw;
+    flex: 1;
+    padding-right: 4.4271vw;
+}
+
+#forms {
+    display: flex;
+    gap: 2.6042vw;
+}
+
+.form-container {
+    background: #F2F1F1;
+    flex: 1;
+}
+
+.form-container > div {
+    font-size: 1.875vw;
+    font-weight: 600;
+    color: #262829;
+    line-height: 2.2688vw;
+    padding: 2.6042vw 0vw 0vw 2.6042vw;
+}
+
+.form-container form {
+    display: flex;
+    padding: 1.5625vw 3.125vw 2.6042vw 3.125vw;
+    flex: 1;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2.0833vw;
+}
+
+.form-container input {
+    background: #FFFFFF;
+    color: #5F6264;
+    padding-left: 1.3021vw;
+    width: 50%;
+    display: inline;
+}
+
+.form-container input::placeholder {
+    opacity: 1;
+    color: #5F6264;
+}
+
+.form-container input:hover::placeholder {
+    color: transparent;
+    cursor: pointer;
+    border-left: 0.0885vw solid #5F6264;
+}
+
+.form-container > form > input:nth-of-type(1) {
+    width: 96%;
+}
+
+fieldset {
+    display: flex;
+    gap: 1.0417vw;
+    border: none;
+    justify-content: stretch;
+    padding: 0;
+}
+
+.form-container button {
+    align-self: end;
+    margin-top: 4.1667vw;
+}
+
+/* offer end */
+
+/* banner start */
+
+#lower-banner {
+    background-image: url(images/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 41.0417vw;
+    display: flex;
+    align-items: center;
+    gap: 7.8125vw;
+    padding: 0vw 13.0208vw;
+}
+
+#banner-left {
+    display: grid;
+    gap: 2.8646vw;
+    box-sizing: border-box;
+    padding-right: 5.2083vw;
+}
+
+#banner-left .text {
+    display: grid;
+    gap: 0.8854vw;
+    overflow-wrap: break-word;
+}
+
+#banner-left .text div {
+    font-size: 2.3438vw;
+    font-weight: 600;
+    line-height: 3.0469vw;
+    color: rgba(214, 214, 214, 1);
+}
+
+#banner-left .text p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.0417vw;
+    line-height: 1.3542vw;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#banner-right {
+    display: grid;
+    grid-template-columns: 9.375vw 9.375vw 9.375vw;
+    gap: 2.8646vw 3.9063vw;
+}
+
+.b-container {
+    display: grid;
+    gap: 1.8229vw;
+}
+
+#banner-right img {
+    max-width: 3.6458vw;
+}
+
+#banner-right span {
+    font-size: 1.1458vw;
+    line-height: 1.4896vw;
+    color: rgba(185, 185, 185, 1);
+    word-spacing: 100vw;
+}
+
+/* banner end */
+
+/* footer start */
+
+footer {
+    background: rgba(21, 21, 21, 1);
+}
+
+#footing {
+    padding: 5.2083vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8854vw;
+}
+
+#copyright {
+    width: 8.3333vw;
+}
+
+#copyright span {
+    line-height: 1.25vw;
+    color: rgba(255, 255, 255, 0.5);
+    width: 14.3229vw;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    gap: 2.0833vw;
+}
+
+#info div {
+    font-size: 1.0417vw;
+    font-weight: 500;
+    line-height: 1.5625vw;
+    color: rgba(252, 252, 252, 1);
+}
+
+#info button {
+    display: flex;
+    align-items: center;
+    gap: 0.5208vw;
+    font-size: 0.9375vw;
+    font-weight: 500;
+    line-height: 1.4063vw;
+    padding: 1.0417vw 1.5625vw;
+}
+
+#info span {
+    display: grid;
+    gap: 1.0417vw;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9375vw;
+    font-weight: 400;
+    line-height: 1.4063vw;
+}
+
+span a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#nav {
+    font-size: 1.0417vw;
+    font-weight: 500;
+    line-height: 1.5625vw;
+    color: rgba(252, 252, 252, 1);
+    display: grid;
+    gap: 2.0833vw;
+}
+#nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1.0417vw;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+li > a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9375vw;
+    line-height: 1.4063vw;
+}
+
+li > a:hover {
+    text-decoration: underline;
+}
+
+li:nth-child(3) {
+    grid-row: 4/5;
+}
+
+#links {
+    display: grid;
+    align-content: space-between;
+    justify-items: center;
+    padding-left: 13.0208vw;
+    border-left: 0.0521vw solid rgba(37, 37, 37, 1);
+    width: 1.5625vw;
+}
+
+
+
