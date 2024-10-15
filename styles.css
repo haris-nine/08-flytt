@@ -116,7 +116,6 @@ button {
 
 button:hover {
     background: radial-gradient(73.88% 73.88% at 53.21% -9.36%, #DC4415 0%, #F3894F 51.39%, #E84F0D 100%);
-    transform: scale(1.01, 1);
 }
 
 /* header end */
@@ -735,5 +734,85 @@ li > a:hover {
     width: 1.5625vw;
 }
 
+/* footer end */
+
+@media only screen and (max-width: 640px) {
+    * {
+        font-size: 1.5vh;
+    }
+
+    header {
+        height: 8vh;
+    }
+
+    #logo {
+        transform-origin: left;
+        transform: scale(4);
+    }
+    .tabs {
+        width: auto;
+        gap: 2vw;
+    }
+
+    .tabs > a {
+        height: 100%;
+    }
+
+    #hero {
+        height: 92vh;
+        flex-direction: column;
+        gap: 30vw;
+    }
+
+    .cta {
+        gap: 2vw;
+    }
+
+    #phone-cta > img {
+        width: 2vw;
+    }
+    button {
+        transform: scale(1.2);
+    }
 
 
+
+
+    .p {
+        transform: scale(2);
+    }
+
+    #form {
+        transform-origin: top;
+        transform: scale(2);
+    }
+    #p-area {
+        flex-direction: column;
+        align-items: center;
+        transform-origin: top;
+        transform: scale(2);
+        margin: 0 20vw 100vw 20vw;
+    }
+
+    #grids {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        aspect-ratio: 0.96;
+        align-items: stretch;
+    }
+    
+    .grid {
+        height: auto;
+        justify-content: center;
+    }
+
+    .grid > * {
+        transform: scale(1.9);
+    }
+
+    .grid button {
+        margin-top: 4vw;
+    }
+
+    
+}
