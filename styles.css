@@ -793,8 +793,6 @@ li > a:hover {
     }
 
 
-
-
     .p {
         transform: scale(2.5);
     }
@@ -1057,6 +1055,11 @@ li > a:hover {
         text-decoration: none;
         color: #C6C6C6;
         border-bottom: 1px solid #424242;
+    }
+    
+
+    div#form  button[type='submit'] {
+        transform: scale(.9);
     }
 }
 
