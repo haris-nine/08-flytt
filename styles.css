@@ -35,7 +35,7 @@ html,body {
 
 header {
     display: flex;
-    height: 5.7292vw;
+    height: 10.185svh;
     width: auto;
     align-items: center;
     padding: 0vw 1.5625vw;
@@ -80,6 +80,7 @@ header {
     gap: 1.3021vw;
 }
 
+
 #phone-cta {
     border: none;
     background-color: white;
@@ -118,6 +119,18 @@ button:hover {
     background: radial-gradient(73.88% 73.88% at 53.21% -9.36%, #DC4415 0%, #F3894F 51.39%, #E84F0D 100%);
 }
 
+#mobile-menu {
+    display: none;
+}
+
+#myBtn {
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
 /* header end */
 
 /* hero start */
@@ -128,7 +141,7 @@ button:hover {
     url('images/bg.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 44vw;
+    height: 89.815svh;
     color: rgba(255, 255, 255, 1);
     display: flex;
     gap: 8.3333vw;
@@ -742,7 +755,7 @@ li > a:hover {
     }
 
     header {
-        height: 8vh;
+        height: 8svh;
     }
 
     #logo {
@@ -752,6 +765,7 @@ li > a:hover {
     .tabs {
         width: auto;
         gap: 2vw;
+        display: none;
     }
 
     .tabs > a {
@@ -759,27 +773,34 @@ li > a:hover {
     }
 
     #hero {
-        height: 92vh;
+        height: 92svh;
         flex-direction: column;
         gap: 30vw;
     }
 
     .cta {
-        gap: 2vw;
+        gap: 4vw;
+        margin-left: auto;
+        margin-right: 4vw;
     }
 
     #phone-cta > img {
         width: 2vw;
     }
     button {
-        transform: scale(1.2);
+        transform: scale(1.5);
+        font-size: 1.3vw;
     }
 
 
 
 
     .p {
-        transform: scale(2);
+        transform: scale(2.5);
+    }
+
+    .text p {
+        font-size: 1.25vw;
     }
 
     #form {
@@ -793,6 +814,18 @@ li > a:hover {
         transform: scale(2);
         margin: 20vw 32vw 100vw 32vw;
         padding: 0 0;
+    }
+
+    #para h1 {
+        font-size: 3vw;
+    }
+
+    #para p {
+        font-size: 1.3vw;
+    }
+
+    #p-area button {
+        transform: scale(1.1);
     }
 
     #grids {
@@ -815,48 +848,150 @@ li > a:hover {
         margin-top: 8vw;
     }
 
+    .grid:nth-child(4) {
+        gap: 6vw;
+    }
+
     #endorsement {
         display: grid;
         grid-template-columns: 1fr 5fr;
+        gap: 15vw;
+    }
+
+    #endorsement div {
+        font-size: 3vw;
+        line-height: 2.6vw;
+    }
+
+    #endorsement span {
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+    }
+
+    #endorsement img {
+        transform: scale(2.5);
     }
 
     #box-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
     }
 
     .box {
         width: auto;
+        aspect-ratio: 1;
+        height: 60vw;
     }
+
+    .box > div:nth-of-type(1) {
+        font-size: 3vw;
+        line-height: 3vw;
+    }
+
+    .verification {
+        margin-top: 2vw;
+    }
+    .verification img {
+
+        max-width: 5vw;
+    }
+
+    .username > * {
+        font-size: 3vw;
+    }
+
+    
 
     #offer {
         display: grid;
+        grid-template-rows: 1fr 6fr;
+        height: 80svh;
+    }
+
+    #banner > div:first-child { 
+        font-size: 6vw;
+    }
+
+    #banner >div:last-child {
+        padding: 0;
+        font-size: 2.5vw;
+        line-height: 2.8vw;
     }
 
     #forms {
         flex-direction: column;
     }
 
-    #forms input:first-of-type {
+    #forms:first-child {
         width: 97%;
+    }
+
+    .form-container{
+    }
+
+    .form-container > div {
+        margin-top: 2vw;
+        font-size: 5vw;
+    }
+
+    .form-container input {
+        margin-top: 4vw;
+        font-size: 4.8vw;
+    }
+
+    .form-container button {
+        transform-origin: right;
+        transform: scale(2);
     }
 
     #lower-banner {
         flex-direction: column;
-        height: 80vw;
+        height: 80vh;
         justify-content: center;
     } 
-    
-    #footing {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        row-gap: 5vw;
+
+    #banner-left {
+        margin-top: -10vw;
     }
 
+    #banner-left .text div {
+        font-size: 5.5vw;
+        line-height: 6vw;
+    }
+
+    #banner-left .text p {
+        font-size: 3.5vw;
+        line-height: 4vw;
+    }
+
+    #banner-left button {
+        transform-origin: left;
+    }
+
+    #banner-right {
+        transform-origin: top;
+        transform: scale(1.8);
+    }
+    
+    #footing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #copyright {
+        flex-direction: row;
+        justify-content: center;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 10vw;
+    }
     #copyright span {
         line-height: 1.3;
         color: rgba(255, 255, 255, 0.5);
-        width: 20vw;
+        width: auto;
     }
+
 
 
     #links {
@@ -864,5 +999,64 @@ li > a:hover {
         display: flex;
         gap: 5vw;
         justify-content: center;
+        width: auto;
+        padding: 0;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    #info {
+        margin-bottom: 3vw;
+    }
+
+    #info span {
+        display: flex;
+        gap: 25vw;
+    }
+
+    #info div, #info button {
+        display: none;
+    }
+
+    #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+    }
+
+    #mobile-menu {
+        margin: 0 1vw;
+        padding: 0;
+        background-color: transparent;
+        display: inline;
+}
+
+    #mobile-menu img {
+        width: 1.5vw;
+    }
+
+    #mobile-menu:hover {
+        background: none;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        gap: 1vw;
+        position: absolute;
+        right: 2vw;
+        top: 8vw;
+        background: #424242;
+        padding: 1vw;
+    }
+    #menu > a {
+        text-decoration: none;
+        color: #C6C6C6;
+        border-bottom: 1px solid #424242;
     }
 }
+

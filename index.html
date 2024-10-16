@@ -15,11 +15,10 @@
     <title>08 Flytt</title>
 </head>
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <header>
         <img src="images/logo.svg" alt="08 Flytt" id="logo">
         <div class="tabs">
-            <a href="#">Hjem</a>
-            <a href="#">Om oss</a>
         </div>
         <div class="cta">
             <div id="phone-cta">
@@ -27,6 +26,11 @@
                 <span>08 - 26 80 40</span>
             </div>
             <button id="offer-btn">Offertförfrågan</button>
+        </div>
+        <button id="mobile-menu" onclick="showDiv()"><img src="images/bars-solid.svg"></button>
+        <div id="menu">
+            <a href="#">Hjem</a>
+            <a href="#">Om oss</a>
         </div>
     </header>
     <div id="hero">
@@ -275,5 +279,36 @@
             </div>
         </div>
     </footer>
+    <script>// Get the button:
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+        
+        function showDiv() {
+            var x = document.getElementById("menu");
+            if (x.style.display === "none") {
+                x.style.display = "inline-flex";
+            } else {
+                    x.style.display = "none";
+            }
+}
+        
+        
+        </script>
 </body>
 </html>
