@@ -784,6 +784,11 @@ li > a:hover {
         margin-right: 4vw;
     }
 
+
+    #phone-cta {
+        display: none;
+    }
+    
     #phone-cta > img {
         width: 2vw;
     }
